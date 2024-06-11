@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+</head>
+
+<body>
+    <header><h1>Message Board Home Page</h1></header>
+    <ul>
+        {% for post in all_post_list %}
+            <li>
+                {{ post.post_date|date:"d-m-y g:i a" }} | 
+                <a href="{{ post.get_absolute_url }}" target="_blank">{{ post.title }}</a> 
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

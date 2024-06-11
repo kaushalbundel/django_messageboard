@@ -1,0 +1,12 @@
+<header><h1>Post Detail</h1></header>
+<div>
+    <h2>{{ single_post.title }}</h2>
+    <p>{{ single_post.post_date }}</p>
+</div>
+<div>
+    {{ single_post.description }}
+</div>
+
+<div>
+    <a href="{% url 'home' %}">Back To Home</a>
+</div>

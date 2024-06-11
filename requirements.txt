@@ -1,0 +1,14 @@
+- The expected changes are both frontend and backend
+- The available hour is 1 hour
+
+Changes on the frontend
+
+- The app should have a header text
+- All titles of messages should be visible
+- All descriptions should be visible as the titles are clicked
+- The user should be able to go back to the home page by clicking back
+- The basic page template should have common elements in both of the pages (Nothing of this sort can be done in this example)
+
+Backend changes
+- There should be title, description and post date for each of the post
+- The homepage should indicate each of these three attributes for each of the posts
